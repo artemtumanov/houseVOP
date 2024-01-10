@@ -1,0 +1,85 @@
+.promo {
+    padding: 30px 0 74px 0;
+    background: url('../img/first-screen/background.png') center center/cover no-repeat;
+    nav {
+        display: flex; 
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 135px;
+        
+    }
+    &__sublogo {
+        margin-top: 15px;
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1.44px;
+    }
+    &__list {
+        display: flex;
+        list-style-type: none;
+        width: 541px;
+        justify-content: space-between;
+        li {
+            a {
+                text-decoration: none;
+                color: #FFF;
+                font-family: Raleway;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.7px;
+                transition: 0.4s all;
+                &:hover {
+                    color: #ffffffa8;
+                }
+            }
+        }
+    }
+    &__header {
+        width: 556px;
+        margin: 200px auto 0 auto;
+        color: $main-color;
+        text-align: center;
+        font-family: Playfair Display;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__mouse {
+        display: block;
+        margin: 100px auto 0 auto;
+    }
+    &__contacts {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    &__address {
+        margin-right: 100px;
+        margin-bottom: 0;
+    }
+    &__location, &__phone-icon {
+        width: 21px;
+        height: 21px;
+        margin-right: 15px;
+    }
+    &__text {
+        color: #FFF;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        transition: 0.4s all;
+        &:hover {
+            color: #ffffffa8;
+        }
+    }
+    &__address, &__phone {
+        display: flex;
+        align-items: center;
+    }
+}

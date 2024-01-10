@@ -1,0 +1,112 @@
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .promo {
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__logo {
+            margin-bottom: 30px;
+        }
+        &__list {
+            width: 100%;
+            li {
+                a {
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+        &__text {
+            &:hover {
+                color: #FFF;
+            }
+        }
+    }
+    .about {
+        padding: 100px 0;
+        &__img {
+            width: 70px;
+            height: 70px; 
+        }
+        &__text {
+            font-size: 16px;
+            margin-top: 35px;
+        }
+        &__second {
+            transform: translateY(10%);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+        height: 100vh;
+        &__logo {
+            margin-bottom: 0;
+        }
+        &__list {
+            display: none;
+        }
+        &__header {
+            width: 100%;
+            margin: 150px auto 0 auto;
+            font-size: 35px;
+        }
+        &__mouse {
+            margin-top: 60px;
+        }
+        &__contacts {
+            margin-top: 154px;
+            flex-direction: column;
+            justify-content: unset;
+            align-items: center;
+        }
+        &__address {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .about {
+        padding: 50px 0;
+        &__wrapper {
+           flex-direction: column;
+           align-items: center;
+        }
+        &__item {
+            margin-bottom: 20px;
+            width: 100%;
+            &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                width: unset;
+            }
+        }
+        &__second {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
