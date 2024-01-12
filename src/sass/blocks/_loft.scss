@@ -1,0 +1,37 @@
+.loft {
+    background-color: $background-color;
+    position: relative;
+    &__title {
+        margin-bottom: 100px;
+    }
+    &__grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 535px);
+        grid-template-rows: repeat(2, 320px);
+        grid-auto-rows: repeat(2, 320px);
+        gap: 30px;
+    }
+    &__item {
+        padding: 250px 0 0 50px;
+        width: 100%;
+        height: 100%;
+        &:nth-child(1), &:nth-child(3) {
+            background: url('../img/third-screen/loft_1.png');
+        };
+        &:nth-child(2), &:nth-child(4) {
+            background: url('../img/third-screen/loft_2.png');
+        };
+    }
+    &__head {
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    &__three {
+        position: absolute;
+        top: 90px;
+        left: 200px;
+    }
+}

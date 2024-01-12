@@ -1,0 +1,47 @@
+.footer {
+    background-color: #2D343C;
+    padding: 60px 0 50px 0;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__logo-img {
+        width: 134px;
+    }
+    &__sublogo {
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1.44px;
+        margin-top: 15px;
+    }
+    &__list {
+        list-style-type: none;
+        li {
+            margin-bottom: 15px;
+            a, div {
+                color: #FFF;
+                font-family: Raleway;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.7px;
+                text-decoration: none;
+                span {
+                    color: $main-color;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 0.7px;
+                }
+            }
+        }
+    }
+    &__socials {
+        display: flex;
+    }
+    &__social {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}

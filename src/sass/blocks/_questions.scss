@@ -1,0 +1,10 @@
+.questions {
+    background-color: $background-color;
+    padding-bottom: 180px;
+    &__form {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

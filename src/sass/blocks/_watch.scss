@@ -1,0 +1,31 @@
+.watch {
+    padding: 180px 0;
+    background: url('../img/watch/background-watch.png');
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        align-self: flex-end;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 535px 540px;
+        column-gap: 30px;
+        justify-content: center;
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 255px);
+        grid-template-rows: repeat(2, 50px);
+        grid-auto-rows: 50px;
+        row-gap: 35px;
+        column-gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+}
